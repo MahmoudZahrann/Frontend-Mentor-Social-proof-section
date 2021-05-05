@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+:root {
+    --primary-color: #502050;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("images/bg-pattern-bottom-mobile.svg") right bottom no-repeat, url("images/bg-pattern-top-mobile.svg") left top no-repeat;
+    padding: 75px 20px 100px 20px;
+    font-family: "Spartan";
+    font-size: 15px;
+    width: 100vw;
+}
+
+.Header-section {
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-family: "Spartan";
+    font-size: 2.3em;
+    text-align: center;
+}
+
+.slogan {
+    padding: 1px;
+    text-align: center;
+    color: #ee68a4;
+    width: 345px;
+}
+
+.slogan p {
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 22px;
+    width: 345px;
+}
+
+.ratings {
+    background-color: #f7f2f7;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0em;
+    text-align: center;
+    padding: 19px 0;
+    border-radius: .6em;
+    height: 58px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.star {
+    margin: 0em .3em;
+}
+
+.ratings__text {
+    font-weight: 700;
+    color: var(--primary-color);
+    width: 65%;
+}
+
+.testimonial__card {
+    background-color: var(--primary-color);
+    display: block;
+    padding: 38px 30px;
+    margin: 2em 0em;
+    border-radius: .6em;
+    height: 185px;
+}
+
+.testimonial__cardReviewer {
+    display: flex;
+    margin: 0em 0em 1em 0em;
+    align-items: center;
+}
+
+.testimonial__cardReviewerImage {
+    display: flex;
+    width: 55px;
+    margin-bottom: 2px;
+}
+
+.testimonial__cardReviewerImage img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+.testimonial__cardReviewerData {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial__cardReviewerData p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 21px;
+    color: #f7f2f7;
+}
+
+.testimonial__cardReviewerData p span {
+    color: hsl(333, 80%, 67%);
+}
+
+.testimonial__cardText {
+    color: #f7f2f7;
+    font-weight: 500;
+    /*should be 15px*/
+    /*  font-size: 80%; */
+    line-height: 1.8em;
+}
+.attribution {
+    text-align: center;
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        background: url("images/bg-pattern-bottom-desktop.svg") right bottom no-repeat, url("images/bg-pattern-top-desktop.svg") left top no-repeat;
+    }
+
+    .SocialProofSection {
+        height: 100vh;
+        margin-left: 146px;
+        margin-top: 54px;
+    }
+
+    .desktop__designTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #leftCol {
+        width: 47%;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #rightCol {
+        width: 40%;
+        margin: 0px 146px 0px 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        width: 365px;
+    }
+
+    h1, .slogan {
+        text-align: left;
+    }
+
+    .slogan p{
+        width: 400px;  
+
+    }
+
+    .ratings {
+        margin: 8px 48px; 
+        width: 445px;
+        padding: 0px 60px 0px 32px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ratings:first-child {
+        margin: 0px 96px 8px 0px;
+    }
+
+    .ratings:last-child {
+        margin: 8px 0px 0px 96px;
+    }
+
+    .ratings__text {
+        text-align: left;
+    }
+    
+    .stars {
+        display: flex;
+        justify-content: flex-start;
+    }
+   
+    .testimonial {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .testimonial__card {
+        margin: 15px 15px;
+        padding: 30px;
+    }
+
+    .testimonial__cardText p {
+        width: 335px;
+        font-weight: 400;
+    }
+
+    .testimonial__card:first-child {
+        margin: 0px 15px 30px 0px
+    }
+    
+    .testimonial__card:last-child {
+        margin: 30px 0px 0px 15px;
+    }
+    
+    .testimonial__cardReviewerData p{
+        font-weight: 500;
+    }
+}
